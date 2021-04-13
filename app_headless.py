@@ -22,9 +22,8 @@ def get_color(text):
 print("Starting webScraper: \n> app.py");
 options = Options()
 options.page_load_strategy = 'normal'
-driver = webdriver.Chrome();
-# driver = webdriver.Chrome('./chromedriver_linux64');
-# driver = webdriver.Chrome(options=options)
+options.add_argument('headless')
+driver = webdriver.Chrome(options=options)
 
 base_url = 'https://teamcolorcodes.com/mlb-color-codes/';
 driver.get(base_url);
