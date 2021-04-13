@@ -28,7 +28,7 @@ def get_ea_img_xpath(index):
 
 report = {}
 
-for idx in range(12, 13):
+for idx in range(1, 13):
   try:
     a_elem = driver.find_element_by_xpath(get_ea_link_xpath(idx))
     if a_elem is None : continue
